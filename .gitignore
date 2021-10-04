@@ -1,0 +1,63 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### react ###
+src/main/frontend/node_modules/
+src/main/frontend/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+.mvn/wrapper/MavenWrapperDownloader.java
+mvnw
+mvnw.cmd
+src/main/frontend/build/asset-manifest.json
+src/main/frontend/build/favicon.ico
+src/main/frontend/build/index.html
+src/main/frontend/build/logo192.png
+src/main/frontend/build/logo512.png
+src/main/frontend/build/manifest.json
+src/main/frontend/build/precache-manifest.e7ae2ba24a3bce26bf1a1669ed851126.js
+src/main/frontend/build/robots.txt
+src/main/frontend/build/service-worker.js
+src/main/frontend/build/static/css/main.10b7b7f7.chunk.css
+src/main/frontend/build/static/css/main.10b7b7f7.chunk.css.map
+src/main/frontend/build/static/js/2.e3bc1bfe.chunk.js
+src/main/frontend/build/static/js/2.e3bc1bfe.chunk.js.LICENSE.txt
+src/main/frontend/build/static/js/2.e3bc1bfe.chunk.js.map
+src/main/frontend/build/static/js/main.2a30b2ca.chunk.js
+src/main/frontend/build/static/js/main.2a30b2ca.chunk.js.map
+src/main/frontend/build/static/js/runtime-main.c3edc8c4.js
+src/main/frontend/build/static/js/runtime-main.c3edc8c4.js.map
+src/main/frontend/build/static/media/hero.ceb9d010.svg
+src/main/frontend/yarn.lock
+src/main/frontend/yarn-error.log
