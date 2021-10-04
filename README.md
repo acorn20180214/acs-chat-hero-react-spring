@@ -10,6 +10,8 @@ products:
 
 # Group Chat Sample
 
+A live demo site is hosted on azure app service at:  https://acs-chat-demo-react-spring.azurewebsites.net/
+
 This is a sample application to show how the Chat Web SDK can be used to build a single threaded chat experience.
 The client-side application is a React based user interface which uses Redux for handling complex state while leveraging Microsoft Fluent UI.
 Powering this front-end is a Spring boot application powered by Java to connect this application with Azure Communication Services.
