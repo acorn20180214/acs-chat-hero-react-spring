@@ -2,21 +2,21 @@
 page_type: sample
 languages:
 - React/Redux
-- Spring boot/Java
+- Spring Boot/Java
 products:
 - azure
 - azure-communication-services
 ---
 
-# Group Chat Sample
+# Group Chat Hero Sample in Java (Spring Boot)
 
-This project is inspired by the sample project implemented by [React + ASP.NET Core](https://github.com/Azure-Samples/communication-services-web-chat-hero)
+This project is inspired by the [sample project](https://github.com/Azure-Samples/communication-services-web-chat-hero) implemented by React + ASP.NET Core discribed on [Microsoft Docs](https://docs.microsoft.com/en-us/azure/communication-services/samples/chat-hero-sample)
 
-This is a sample application to show how the Chat Web Java SDK can be used to build a single threaded chat experience.
+This is a sample application to show how the **ACS Chat Java SDK** can be used to build a single threaded chat experience.
 The client-side application is a React based user interface which uses Redux for handling complex state while leveraging Microsoft Fluent UI.
 Powering this front-end is a Spring boot application powered by Java to connect this application with Azure Communication Services.
 
-🤞 A live demo site is hosted on azure app service at:  https://acs-chat-demo-react-spring.azurewebsites.net/
+🤞 **A live demo site is hosted on azure app service at:**  https://acs-chat-demo-react-spring.azurewebsites.net/
 
 ## ❤️Feedback
 
@@ -27,6 +27,7 @@ We appreciate your feedback and energy helping us improve our services. [Please 
 - Create an Azure account with an active subscription. For details, see [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - [Node.js (12.18.4 and above)](https://nodejs.org/en/download/)
 - [Spring 2.5.5](https://spring.io/projects/spring-boot)
+- [Spring Tools 4](https://spring.io/tools) with [Azure ToolKit](https://docs.microsoft.com/en-us/azure/developer/java/toolkit-for-eclipse/installation)
 - [Java 8](https://www.oracle.com/java/technologies/java8.html)
 - Create an Azure Communication Services resource. For details, see [Create an Azure Communication Resource](https://docs.microsoft.com/en-us/azure/communication-services/quickstarts/create-communication-resource). You'll need to record your resource **connection string** for this project.
 
@@ -63,9 +64,13 @@ We appreciate your feedback and energy helping us improve our services. [Please 
 
 ### Troubleshooting
 
-1. Solution doesn\'t build, it throws errors during NPM installation/build
+1. Project doesn\'t build, it throws errors during mvn installation/build
 
-    Clean/rebuild the Java solution
+   🛠 Make sure JDK and Apache Maven has been successfully installed, then clean/rebuild the Java solution.
+    
+2. java.lang.IllegalArgumentException: Connection string has invalid key value pair: <YOUR_ACS_CONNECTION_STRING>
+
+   🛠 Make sure you have updated the azure communication services connection string in the application.properties.
 
 ## Publish to Azure
 
@@ -75,6 +80,7 @@ We appreciate your feedback and energy helping us improve our services. [Please 
 ## Building off of the sample
 
 If you would like to build off of this sample to add chat capabilities to your own awesome application, keep a few things in mind:
+- When developing locally,  a proxy entry has been added to frontend/package.json to proxy all of the requests from react running at port 3000 to spring boot running at port 8080. 
 
 - The sample serves a Single Page Application. This has a few implications.
   - By default, the served app cannot be embedded in another frame (e.g. as a web widget).
