@@ -18,6 +18,9 @@ Powering this front-end is a Spring boot application powered by Java to connect 
 
 🤞 **A live demo site is hosted on azure app service at:**  https://acs-chat-demo-react-spring.azurewebsites.net/
 
+![image](https://user-images.githubusercontent.com/50332346/135982805-9ff553ca-1241-42cc-9cd6-dfd43e00df84.png)
+
+
 ## ❤️Feedback
 
 We appreciate your feedback and energy helping us improve our services. [Please let us know if you are satisfied with ACS through this survey](https://microsoft.qualtrics.com/jfe/form/SV_5dtYL81xwHnUVue). 
